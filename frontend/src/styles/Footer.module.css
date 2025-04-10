@@ -1,0 +1,82 @@
+.footerWrapper {
+    background-color: #FCD5BACC;
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+    width: 100vw;
+    position: relative
+}
+
+.footerContent {
+    width: 1208px;
+    border: 4px solid red;
+    margin-top: 30px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoFooter {
+    height: 40px;
+}
+
+.navLinks {
+    display: flex;
+    gap: 24px;
+}
+
+.link {
+    text-decoration: none;
+    color: #414141;
+    font-size: 12px;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 16px;
+}
+
+.icon {
+    color: #414141;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.iconCall {
+    margin: 0px 5px -2px 0px
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #414141;
+}
+
+.contactInfo span {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.design {
+    font-size: 12px;
+    color: #414141;
+}
+
+@media (max-width: 768px) {
+    .footerContent {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .navLinks, .socialLinks {
+        gap: 12px;
+    }
+
+    .contactInfo {
+        align-items: center;
+    }
+}

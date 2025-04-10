@@ -1,0 +1,42 @@
+# Общие исключения
+node_modules
+dist
+.env
+.env.       # если используешь .env.production и т.п.
+.DS_Store
+Thumbs.db
+.log
+.tsbuildinfo
+
+# IDE и редакторы
+.vscode
+.idea
+.swp
+
+# Кэш и сборка
+.cache
+.cache
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Frontend
+frontendnode_modules
+frontenddist
+frontend.vite
+frontend.next
+frontendbuild
+
+# Backend
+backendnode_modules
+backenddist
+backendbuild
+backend.output
+
+# OS файлы
+.bak
+.tmp
+.orig
+.sublime-workspace
+.sublime-project

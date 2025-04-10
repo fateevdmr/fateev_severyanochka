@@ -1,0 +1,178 @@
+.mainContainer {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 180px;
+    padding: 0px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin: 30px 0px 30px 0px;
+}
+
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid red;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.cardTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sectionTitle {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.phoneLabel {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.phoneNumber {
+    color: #2a9d8f;
+    font-weight: bold;
+}
+
+@media (max-width: 1220px) {
+    .mainContainer {
+        width: 90%;
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .title {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .mainContainer {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .card {
+        flex: 1 1 calc(100% - 20px);
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .cardTitle {
+        font-size: 18px;
+    }
+
+    .cardsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .cardTitle {
+        font-size: 16px;
+    }
+}
+
+.vacanciesContainer {
+    max-width: 1200px;
+    margin: 100px auto 40px;
+    padding: 0 20px;
+}
+
+.vacanciesContainer h1 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.vacancy {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vacancy h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.vacancy p {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.vacancy ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.vacancy li {
+    margin-bottom: 10px;
+    color: #666;
+    padding-left: 20px;
+    position: relative;
+}
+
+.vacancy li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #2ecc71;
+}
+
+.applyButton {
+    background: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+    width: 100%;
+}
+
+.applyButton:hover {
+    background: #27ae60;
+}
